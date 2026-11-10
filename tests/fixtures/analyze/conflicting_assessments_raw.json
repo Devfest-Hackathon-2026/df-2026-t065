@@ -1,0 +1,30 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Schema-valid raw model output with duplicated and contradictory assessments for the same allergen (contains vs absence, unconfirmed vs contains). Must be REJECTED as a whole (AI_FAILED); a 'contains' mention must never be silently dropped.",
+  "kind": "raw_model_output",
+  "expect": "invalid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["peanut", "milk"],
+  "body": {
+    "requestId": "fixture-conflict",
+    "status": "ok",
+    "dataOrigin": "ai_analysis",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "Satay Skewers with peanut sauce (peanut-free option available)", "lang": "en", "readBy": "ai" },
+        "aiTranslation": null,
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "absence_claim", "excerpt": "peanut-free" }, "confirmationRequired": true },
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "peanut sauce" }, "confirmationRequired": true },
+          { "code": "milk", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "milk", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "Satay" }, "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

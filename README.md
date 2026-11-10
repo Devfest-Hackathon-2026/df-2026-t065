@@ -36,3 +36,52 @@
   ## ライセンス
 
   [MIT License](LICENSE) です。ほかのライセンスにしたいときは、LICENSE を書き換えてください。
+
+
+---
+
+# AllergyBridge — 食物アレルギーの確認を、ことばの壁の向こうへ
+
+食物アレルギーのある旅行者が、日本語・英語の確認カードを店員に提示して、原材料・だし・調味料・調理環境を確認するためのWebアプリです。料理の安全性や飲食可否を判定しません。
+
+## 提出版の機能と状態
+
+- アレルゲンの選択、日英の定型確認カード、店員の回答記録、端末内の設定保存・削除。
+- 食事制約の確認カード。未検証のdraft文言は表示しません。認証・宗教基準への適合を保証しません。
+- 正常に初回キャッシュを完了した対応ブラウザでのオフライン確認カード。初回アクセスには通信が必要です。Safari/iOS実機・容量不足時の動作には未検証部分があります。
+- **本提出はcard_onlyです。本番の画像選択・解析UIは無効、APIは本文読取前に503 `AI_DISABLED`を返します。** Gemini連携コードは含まれますが、`GEMINI_ENABLED=false`、Firestore本番承認定数false（G3 NO-GO）を維持しています。
+- 一般公開URLは未確定です。開発用Cloud Runの旧Revisionに本ソースがデプロイされたとは扱いません。クラウド公開の成功を提出準備完了の条件にしていません。
+
+## ローカルで確認する
+
+Node.js 22.12以上、npmが必要です。認証情報・APIキーは不要です。
+
+```bash
+npm ci
+npm run verify
+GEMINI_ENABLED=false npm start
+```
+
+ブラウザで `http://localhost:3000` を開きます。`.env.example`は安全なカード単独用の例です。必要に応じて`.env.local`へコピーしてください。実際の認証情報や画像はコミットしないでください。
+
+開発時だけ合成Mockを使う場合は `MOCK_GEMINI=true npm run dev`。本番ではMockは無効です。Mockの結果は実Geminiによる解析ではありません。
+
+## Dockerによるローカル起動
+
+```bash
+docker build -t allergybridge-submission .
+docker run --rm -p 8080:8080 -e GEMINI_ENABLED=false allergybridge-submission
+```
+
+`http://localhost:8080` を開きます。この説明はローカル起動用です。自動デプロイトリガー、クラウド認証・IAM設定は含みません。今回の提出準備ではDockerビルド自体は未検証です。
+
+## 検証・安全・著作物
+
+- [提出用検証記録](docs/VALIDATION.md)、[安全方針](docs/SAFETY.md)、[AI利用記録](docs/AI_USAGE.md)
+- [著作物台帳](data/SOURCES.csv)・[依存ライセンス一覧](data/DEPENDENCY_LICENSES.csv)。依存バージョンとライセンスは`package-lock.json`にも記載しています。ライブラリ本体・node_modules・生成バンドルは同梱しません。
+- 本リポジトリの作品コードは既存の[MIT LICENSE](LICENSE)に従います。依存物は各々のライセンスに従います。`caniuse-lite`はCC-BY-4.0、任意のlibvipsバイナリはLGPL-3.0-or-later等です。詳細は著作物台帳を参照してください。
+- 画像・AI出力本文をサーバーログに残さず、利用者の設定・回答は端末内で扱います。端末を共有する場合はアプリ内で削除してください。
+
+## 提出スナップショット
+
+開発用mainの固定SHAは `448e131d28d9e39820a7ed9cd3dadada0eea609f`。アプリの`src/`・`public/`・対訳データ・ビルドスクリプトは同版からコピーしています。PrivateのGit履歴、クラウドの認証・デプロイ設定、内部IAM証跡、実クラウド試験ハーネスは持ち込みません。提出用の変更と検証範囲は [SNAPSHOT.md](SNAPSHOT.md) を参照してください。

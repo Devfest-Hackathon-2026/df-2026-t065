@@ -32,3 +32,22 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 *.log
+
+# AllergyBridge local dependencies, builds and synthetic test outputs
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+test-results/
+playwright-report/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*-credentials.json
+service-account*.json
+gha-creds-*.json
+uploads/

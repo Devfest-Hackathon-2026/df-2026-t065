@@ -1,0 +1,30 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Raw model output that obeyed an injection / hallucinated a verdict. Must be REJECTED by the contract (safe/edible fields, unknown category, missing confirmationRequired).",
+  "kind": "raw_model_output",
+  "expect": "invalid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["peanut", "milk"],
+  "body": {
+    "requestId": "fixture-invalid",
+    "status": "ok",
+    "dataOrigin": "ai_analysis",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "Satay Skewers", "lang": "en", "readBy": "ai" },
+        "aiTranslation": null,
+        "readability": "clear",
+        "safe": true,
+        "edible": true,
+        "allergens": [
+          { "code": "peanut", "category": "allergen_absent", "confirmationRequired": false },
+          { "code": "milk", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

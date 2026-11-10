@@ -1,0 +1,27 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Raw model output whose readText (U+2063 INVISIBLE SEPARATOR + U+200E LEFT-TO-RIGHT MARK) and evidence excerpt (U+200E) consist only of invisible format characters; the excerpt IS contained in the readText, so a naive substring check passes. There is no visible evidence, so it must be REJECTED (AI_FAILED), never shown as a menu mention.",
+  "kind": "raw_model_output",
+  "expect": "invalid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["peanut"],
+  "body": {
+    "requestId": "fixture-invisible",
+    "status": "ok",
+    "dataOrigin": "ai_analysis",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "\u2063\u200E", "lang": "en", "readBy": "ai" },
+        "aiTranslation": null,
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "\u200E" }, "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

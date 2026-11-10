@@ -1,0 +1,25 @@
+# Never send secrets or local state to the build context.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*-credentials.json
+service-account*.json
+.git
+.github
+.claude
+node_modules
+.next
+coverage
+test-results
+playwright-report
+*.log
+*.tsbuildinfo
+Dockerfile
+.dockerignore
+# tests/fixtures is needed at build time (mock fixtures are imported by src/server/mockFixtures.ts)
+tests/contract
+tests/server
+tests/e2e
+docs

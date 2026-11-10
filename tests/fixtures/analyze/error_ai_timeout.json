@@ -1,0 +1,11 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Gemini call timed out. UI must keep the card-only path available.",
+  "kind": "error",
+  "expect": "valid",
+  "httpStatus": 504,
+  "body": {
+    "requestId": "fixture-timeout",
+    "error": { "code": "AI_TIMEOUT", "retryable": true }
+  }
+}

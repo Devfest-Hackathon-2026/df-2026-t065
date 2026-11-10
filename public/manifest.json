@@ -1,0 +1,10 @@
+{
+  "name": "AllergyBridge",
+  "short_name": "AllergyBridge",
+  "description": "Helps travelers with food allergies understand menus and confirm with restaurant staff. Does not judge food safety.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8efdf",
+  "theme_color": "#f8efdf",
+  "icons": []
+}

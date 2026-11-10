@@ -1,0 +1,40 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Partially unreadable Japanese menu (user en -> store ja). One item is blurry.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "en",
+  "storeLang": "ja",
+  "selectedAllergens": ["shrimp", "wheat", "soy"],
+  "body": {
+    "requestId": "fixture-partial",
+    "status": "partial",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": ["blurry"],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "海老天丼", "lang": "ja", "readBy": "ai" },
+        "aiTranslation": { "text": "Shrimp tempura rice bowl", "lang": "en", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "shrimp", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "海老" }, "confirmationRequired": true },
+          { "code": "wheat", "category": "ai_inferred", "rationale": "Tempura batter is commonly made with wheat flour.", "confirmationRequired": true },
+          { "code": "soy", "category": "ai_inferred", "rationale": "Tendon sauce is usually soy-sauce based.", "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-2",
+        "readText": { "text": "□□定食", "lang": "ja", "readBy": "ai" },
+        "aiTranslation": null,
+        "readability": "partially_readable",
+        "allergens": [
+          { "code": "shrimp", "category": "unconfirmed", "reason": "unreadable", "confirmationRequired": true },
+          { "code": "wheat", "category": "unconfirmed", "reason": "unreadable", "confirmationRequired": true },
+          { "code": "soy", "category": "unconfirmed", "reason": "unreadable", "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}
