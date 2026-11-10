@@ -1,0 +1,54 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Normal case: clear English menu (user ja -> store en). Default mock for the frontend.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["shrimp", "wheat", "egg", "milk"],
+  "body": {
+    "requestId": "fixture-ok",
+    "status": "ok",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "Shrimp Tempura - lightly battered shrimp", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "えびの天ぷら（衣付きのえび）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "shrimp", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "Shrimp" }, "confirmationRequired": true },
+          { "code": "wheat", "category": "ai_inferred", "rationale": "Tempura batter is commonly made with wheat flour.", "confirmationRequired": true },
+          { "code": "egg", "category": "ai_inferred", "rationale": "Tempura batter sometimes contains egg.", "confirmationRequired": true },
+          { "code": "milk", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-2",
+        "readText": { "text": "Caesar Salad with parmesan cheese and croutons", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "パルメザンチーズとクルトンのシーザーサラダ", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "shrimp", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "wheat", "category": "ai_inferred", "rationale": "Croutons are usually made from bread.", "confirmationRequired": true },
+          { "code": "egg", "category": "ai_inferred", "rationale": "Caesar dressing is often made with egg.", "confirmationRequired": true },
+          { "code": "milk", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "parmesan cheese" }, "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-3",
+        "readText": { "text": "Grilled Chicken", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "グリルチキン", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "shrimp", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "wheat", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "egg", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "milk", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "No selected allergen is mentioned. 'Not mentioned' must stay 'unconfirmed' and never become 'absent'.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "en",
+  "storeLang": "ja",
+  "selectedAllergens": ["soy", "sesame", "fish"],
+  "body": {
+    "requestId": "fixture-no-mentions",
+    "status": "ok",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "野菜の盛り合わせ", "lang": "ja", "readBy": "ai" },
+        "aiTranslation": { "text": "Assorted vegetables", "lang": "en", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "soy", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "sesame", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true },
+          { "code": "fish", "category": "unconfirmed", "reason": "not_mentioned", "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

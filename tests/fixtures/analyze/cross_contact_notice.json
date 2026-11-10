@@ -1,0 +1,38 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Menu-wide cross-contact notice (shared fryer) plus an item-level precaution.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "en",
+  "storeLang": "ja",
+  "selectedAllergens": ["shrimp", "wheat"],
+  "body": {
+    "requestId": "fixture-cross-contact",
+    "status": "ok",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "フライドポテト（えびフライと同じ油で揚げています）", "lang": "ja", "readBy": "ai" },
+        "aiTranslation": { "text": "French fries (menu says: fried in the same oil as fried shrimp)", "lang": "en", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "shrimp", "category": "menu_mentions", "mention": { "kind": "possible_presence", "excerpt": "えびフライと同じ油で揚げています" }, "confirmationRequired": true },
+          { "code": "wheat", "category": "ai_inferred", "rationale": "Shared frying oil may carry wheat from battered items.", "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": [
+      {
+        "id": "notice-1",
+        "readText": { "text": "揚げ物はすべて同じフライヤーを使用しています。", "lang": "ja", "readBy": "ai" },
+        "aiTranslation": { "text": "All fried foods are cooked in the same fryer.", "lang": "en", "verified": false },
+        "mentions": [
+          { "code": "shrimp", "kind": "possible_presence" },
+          { "code": "wheat", "kind": "possible_presence" }
+        ]
+      }
+    ]
+  }
+}

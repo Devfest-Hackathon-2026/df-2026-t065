@@ -1,0 +1,63 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Allergen names inside negations and precautionary statements. A name in the text is NOT the same as 'contains'; an absence claim is NOT a safety verdict.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["peanut"],
+  "body": {
+    "requestId": "fixture-negation",
+    "status": "ok",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": [],
+    "items": [
+      {
+        "id": "item-1",
+        "readText": { "text": "Pad Thai - contains peanuts", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "パッタイ（ピーナッツ入りと記載）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "contains_claim", "excerpt": "contains peanuts" }, "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-2",
+        "readText": { "text": "Chocolate Brownie (peanut-free)", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "チョコレートブラウニー（ピーナッツ不使用と記載）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "absence_claim", "excerpt": "peanut-free" }, "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-3",
+        "readText": { "text": "Oat Cookie - may contain peanuts", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "オーツクッキー（ピーナッツを含む可能性ありと記載）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "possible_presence", "excerpt": "may contain peanuts" }, "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-4",
+        "readText": { "text": "Green Salad - no peanuts added", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "グリーンサラダ（ピーナッツは加えていないと記載）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "absence_claim", "excerpt": "no peanuts added" }, "confirmationRequired": true }
+        ]
+      },
+      {
+        "id": "item-5",
+        "readText": { "text": "Vegetable Curry - prepared in a facility that handles peanuts", "lang": "en", "readBy": "ai" },
+        "aiTranslation": { "text": "野菜カレー（ピーナッツを扱う施設で調理と記載）", "lang": "ja", "verified": false },
+        "readability": "clear",
+        "allergens": [
+          { "code": "peanut", "category": "menu_mentions", "mention": { "kind": "possible_presence", "excerpt": "prepared in a facility that handles peanuts" }, "confirmationRequired": true }
+        ]
+      }
+    ],
+    "menuNotices": []
+  }
+}

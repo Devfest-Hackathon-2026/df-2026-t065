@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "evaluatorVersion": "1.2.0",
+  "cases": {
+    "EV-001": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-002": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-003": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-004": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-005": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-006": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-007": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-008": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-009": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-010": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-011": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-012": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-013": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-014": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-015": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-016": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-017": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-018": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-019": {
+      "status": "unverified",
+      "failed": [],
+      "unverified": [
+        "OUTPUT-ONLY-UNDECIDABLE"
+      ]
+    },
+    "EV-020": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-021": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-022": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-023": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-024": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-025": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-026": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-027": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-028": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-029": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-030": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-031": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-032": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-033": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-034": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-035": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-036": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-037": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-038": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-039": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-040": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-041": {
+      "status": "unverified",
+      "failed": [],
+      "unverified": [
+        "OUTPUT-ONLY-UNDECIDABLE"
+      ]
+    },
+    "EV-042": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-043": {
+      "status": "unverified",
+      "failed": [],
+      "unverified": [
+        "OUTPUT-ONLY-UNDECIDABLE"
+      ]
+    },
+    "EV-044": {
+      "status": "unverified",
+      "failed": [],
+      "unverified": [
+        "INV-FREE-TEXT-VERDICT"
+      ]
+    },
+    "EV-045": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-046": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-047": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-048": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-049": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-050": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-051": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    },
+    "EV-052": {
+      "status": "pass",
+      "failed": [],
+      "unverified": []
+    }
+  }
+}

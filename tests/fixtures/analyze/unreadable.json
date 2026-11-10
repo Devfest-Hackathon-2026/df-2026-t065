@@ -1,0 +1,17 @@
+{
+  "_notice": "SYNTHETIC TEST DATA written by the AllergyBridge team. Not real Gemini output. Not real restaurant information. Says nothing about the safety of any real food.",
+  "scenario": "Whole image unreadable (dark and blurry). No items; UI must offer retake + card-only path.",
+  "kind": "response",
+  "expect": "valid",
+  "userLang": "ja",
+  "storeLang": "en",
+  "selectedAllergens": ["peanut"],
+  "body": {
+    "requestId": "fixture-unreadable",
+    "status": "unreadable",
+    "dataOrigin": "mock_fixture",
+    "imageIssues": ["blurry", "low_light"],
+    "items": [],
+    "menuNotices": []
+  }
+}

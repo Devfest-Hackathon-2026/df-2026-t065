@@ -1,0 +1,677 @@
+[
+  {
+    "id": "DIETARY_NOTICE_01",
+    "purpose": "dietary_notice",
+    "conditionCode": null,
+    "texts": {
+      "ja": "食事に関する制約・条件があります。以下の食材や調理について確認させていただけますか？",
+      "en": "I have dietary conditions. Could you please check the following ingredients and preparation methods?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_MEAT",
+    "purpose": "ingredient_question",
+    "conditionCode": "meat",
+    "texts": {
+      "ja": "この料理に肉類（牛肉・豚肉・鶏肉など）は含まれていますか？",
+      "en": "Does this dish contain meat (beef, pork, chicken, etc.)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_BEEF",
+    "purpose": "ingredient_question",
+    "conditionCode": "beef",
+    "texts": {
+      "ja": "この料理に牛肉や牛エキスは含まれていますか？",
+      "en": "Does this dish contain beef or beef extracts?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_PORK",
+    "purpose": "ingredient_question",
+    "conditionCode": "pork",
+    "texts": {
+      "ja": "この料理に豚肉やポークエキスなどの豚由来成分は含まれていますか？",
+      "en": "Does this dish contain pork or pork-derived ingredients?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_POULTRY",
+    "purpose": "ingredient_question",
+    "conditionCode": "poultry",
+    "texts": {
+      "ja": "この料理に鶏肉などの鳥類の肉は含まれていますか？",
+      "en": "Does this dish contain poultry or chicken?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_FISH_SEAFOOD",
+    "purpose": "ingredient_question",
+    "conditionCode": "fish_seafood",
+    "texts": {
+      "ja": "この料理に魚介類（魚・エビ・カニ・貝類など）は含まれていますか？",
+      "en": "Does this dish contain fish or seafood?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_SHELLFISH",
+    "purpose": "ingredient_question",
+    "conditionCode": "shellfish",
+    "texts": {
+      "ja": "この料理に貝類や甲殻類（エビ・カニ等）は含まれていますか？",
+      "en": "Does this dish contain shellfish or crustaceans?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_EGG",
+    "purpose": "ingredient_question",
+    "conditionCode": "egg",
+    "texts": {
+      "ja": "この料理に卵は含まれていますか？",
+      "en": "Does this dish contain eggs?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_DAIRY",
+    "purpose": "ingredient_question",
+    "conditionCode": "dairy",
+    "texts": {
+      "ja": "この料理に乳製品（牛乳・チーズ・バター等）は含まれていますか？",
+      "en": "Does this dish contain dairy products (milk, cheese, butter, etc.)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_HONEY",
+    "purpose": "ingredient_question",
+    "conditionCode": "honey",
+    "texts": {
+      "ja": "この料理にはちみつは含まれていますか？",
+      "en": "Does this dish contain honey?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_GELATIN",
+    "purpose": "ingredient_question",
+    "conditionCode": "gelatin",
+    "texts": {
+      "ja": "この料理に動物由来のゼラチンは含まれていますか？",
+      "en": "Does this dish contain animal-derived gelatin?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_LARD_ANIMAL_FAT",
+    "purpose": "ingredient_question",
+    "conditionCode": "lard_animal_fat",
+    "texts": {
+      "ja": "この料理にラード（豚脂）や牛脂などの動物性油脂は使われていますか？",
+      "en": "Does this dish use lard or animal-derived cooking fats?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_ANIMAL_RENNET",
+    "purpose": "ingredient_question",
+    "conditionCode": "animal_rennet",
+    "texts": {
+      "ja": "使用しているチーズに動物性レンネット（凝固酵素）は使われていますか？",
+      "en": "Does the cheese use animal-derived rennet?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_ANIMAL_BROTH",
+    "purpose": "ingredient_question",
+    "conditionCode": "animal_broth",
+    "texts": {
+      "ja": "スープやタレに豚骨・牛骨・鶏ガラ等の動物由来のだしは使われていますか？",
+      "en": "Is animal-derived broth, such as broth made from pork bones, beef bones, or chicken carcasses, used in the soup or sauce?"
+    },
+    "verification": {
+      "ja": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      },
+      "en": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_FISH_BROTH",
+    "purpose": "ingredient_question",
+    "conditionCode": "fish_broth",
+    "texts": {
+      "ja": "かつおだし、煮干しだし、魚醤等の魚介系の出汁や調味料は使われていますか？",
+      "en": "Does this dish contain fish broth (bonito dashi, fish sauce, etc.)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_ALCOHOL_BEVERAGE",
+    "purpose": "ingredient_question",
+    "conditionCode": "alcohol_beverage",
+    "texts": {
+      "ja": "この飲料や料理にアルコール（お酒）は含まれていますか？",
+      "en": "Does this beverage or dish contain alcohol?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_ALCOHOL_SEASONING",
+    "purpose": "ingredient_question",
+    "conditionCode": "alcohol_seasoning",
+    "texts": {
+      "ja": "料理酒やみりん等のアルコール系調味料は使われていますか？",
+      "en": "Are cooking alcohol, sake, or mirin used as seasonings?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_SHARED_COOKWARE",
+    "purpose": "process_question",
+    "conditionCode": "shared_cookware",
+    "texts": {
+      "ja": "他の肉類や豚肉等と調理器具（フライパン、鉄板、包丁、まな板等）を共用していますか？",
+      "en": "Are cooking utensils, griddles, or cutting boards shared with other meats or pork?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_SHARED_FRYER",
+    "purpose": "process_question",
+    "conditionCode": "shared_fryer",
+    "texts": {
+      "ja": "他の肉類や豚肉等の揚げ物と同じ油・フライヤーで揚げていますか？",
+      "en": "Is this fried in the same oil or fryer as other meats or pork?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_MEAT_DAIRY_MIXING",
+    "purpose": "process_question",
+    "conditionCode": "meat_dairy_mixing",
+    "texts": {
+      "ja": "肉類と乳製品（チーズや牛乳等）を同一の鍋や器具で一緒に調理していますか？",
+      "en": "Are meat and dairy products cooked together or prepared using the same cookware?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_SLAUGHTER_METHOD",
+    "purpose": "process_question",
+    "conditionCode": "slaughter_method",
+    "texts": {
+      "ja": "使用しているお肉は特定の規定（ハラール対応等）に則って処理・屠畜されたものですか？",
+      "en": "Was the meat processed and slaughtered according to specific dietary rules (e.g. Halal)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      },
+      "en": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      }
+    }
+  },
+  {
+    "id": "DIETARY_Q_CERTIFICATION_CHECK",
+    "purpose": "process_question",
+    "conditionCode": "certification_check",
+    "texts": {
+      "ja": "この料理やお店は公式な食事規定（ハラール／コーシャ等）の認証を受けていますか？",
+      "en": "Does this dish or restaurant have official dietary certification (Halal, Kosher, etc.)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      },
+      "en": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      }
+    }
+  },
+  {
+    "id": "DIETARY_ANS_YES",
+    "purpose": "staff_answer_option",
+    "conditionCode": null,
+    "texts": {
+      "ja": "はい",
+      "en": "Yes"
+    },
+    "verification": {
+      "ja": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      },
+      "en": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      }
+    }
+  },
+  {
+    "id": "DIETARY_ANS_NO",
+    "purpose": "staff_answer_option",
+    "conditionCode": null,
+    "texts": {
+      "ja": "いいえ",
+      "en": "No"
+    },
+    "verification": {
+      "ja": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      },
+      "en": {
+        "level": "draft",
+        "methods": [],
+        "reviewedAt": null,
+        "reviewerRole": null,
+        "evidence": null,
+        "machineTranslationUsedForDraft": true
+      }
+    }
+  },
+  {
+    "id": "DIETARY_ANS_UNKNOWN",
+    "purpose": "staff_answer_option",
+    "conditionCode": null,
+    "texts": {
+      "ja": "確認できません・わかりません",
+      "en": "Cannot confirm / Not sure"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member A (native ja)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check"],
+        "reviewedAt": "2026-11-09",
+        "reviewerRole": "team member B (bilingual)",
+        "evidence": "docs/VALIDATION.md#phrase-checks-dietary",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  }
+]

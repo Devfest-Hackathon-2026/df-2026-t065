@@ -1,0 +1,515 @@
+[
+  {
+    "id": "NOTICE_ALLERGY_HEADER",
+    "purpose": "notice",
+    "allergen": null,
+    "texts": {
+      "ja": "私には食物アレルギーがあります。命に関わるため、以下の食材（原材料・だし・調味料）および調理環境（器具・揚げ油等の共有）について確認をお願いします。",
+      "en": "I have a serious food allergy. Please help me check whether the following ingredients (including broth and seasonings) or cooking conditions (shared utensils or frying oil) apply."
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_SHRIMP",
+    "purpose": "allergen_question",
+    "allergen": "shrimp",
+    "texts": {
+      "ja": "この料理に「えび」（えびエキス・干しえび・桜えび・シュリンプペースト・魚介だし等を含む）は入っていますか？",
+      "en": "Does this dish contain shrimp or prawns (including shrimp extract, dried or sakura shrimp, shrimp paste, or seafood broth)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_CRAB",
+    "purpose": "allergen_question",
+    "allergen": "crab",
+    "texts": {
+      "ja": "この料理に「かに」（かにエキス・かにみそ・かにペースト・かにだし等を含む）は入っていますか？",
+      "en": "Does this dish contain crab (including crab extract, crab tomalley/paste, or crab broth)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_WALNUT",
+    "purpose": "allergen_question",
+    "allergen": "walnut",
+    "texts": {
+      "ja": "この料理に「くるみ」（くるみ油・砕いたくるみ・ナッツペースト等を含む）は入っていますか？",
+      "en": "Does this dish contain walnuts (including walnut oil, crushed walnuts, or nut paste)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_WHEAT",
+    "purpose": "allergen_question",
+    "allergen": "wheat",
+    "texts": {
+      "ja": "この料理に「小麦」（小麦粉・醤油・パン粉・衣・つなぎ・ルー・麦味噌等を含む）は入っていますか？",
+      "en": "Does this dish contain wheat (including wheat flour, regular soy sauce, breadcrumbs, batter, binder, roux, or wheat/barley miso)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_BUCKWHEAT",
+    "purpose": "allergen_question",
+    "allergen": "buckwheat",
+    "texts": {
+      "ja": "この料理に「そば」（そば粉・そば麺・そば茶・そば湯等を含む）は入っていますか？",
+      "en": "Does this dish contain buckwheat / soba (including buckwheat flour, soba noodles, soba tea, or soba broth/soba-yu)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_EGG",
+    "purpose": "allergen_question",
+    "allergen": "egg",
+    "texts": {
+      "ja": "この料理に「卵」（鶏卵・うずら卵・マヨネーズ・衣・つなぎ・卵白・卵黄等を含む）は入っていますか？",
+      "en": "Does this dish contain egg (including chicken or quail egg, mayonnaise, batter, binder, egg white, or egg yolk)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_MILK",
+    "purpose": "allergen_question",
+    "allergen": "milk",
+    "texts": {
+      "ja": "この料理に「乳・乳製品」（牛乳・バター・チーズ・生クリーム・ヨーグルト・ホエイ・カゼイン等を含む）は入っていますか？",
+      "en": "Does this dish contain milk or dairy (including cow's milk, butter, cheese, cream, yogurt, whey, or casein)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_PEANUT",
+    "purpose": "allergen_question",
+    "allergen": "peanut",
+    "texts": {
+      "ja": "この料理に「落花生（ピーナッツ）」（ピーナッツオイル・ピーナッツバター・ピーナッツソース・砕いたピーナッツ等を含む）は入っていますか？",
+      "en": "Does this dish contain peanuts (including peanut oil, peanut butter, peanut sauce, or crushed peanuts)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_SOY",
+    "purpose": "allergen_question",
+    "allergen": "soy",
+    "texts": {
+      "ja": "この料理に「大豆」（醤油・味噌・豆腐・豆乳・大豆油・枝豆・きな粉等を含む）は入っていますか？",
+      "en": "Does this dish contain soy / soybeans (including soy sauce, miso, tofu, soy milk, soybean oil, edamame, or roasted soy flour [kinako])?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_SESAME",
+    "purpose": "allergen_question",
+    "allergen": "sesame",
+    "texts": {
+      "ja": "この料理に「ごま」（ごま油・すりごま・練りごま・ごまだれ・タヒニ等を含む）は入っていますか？",
+      "en": "Does this dish contain sesame (including sesame oil, ground sesame, sesame paste, sesame dressing, or tahini)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_ALLERGEN_FISH",
+    "purpose": "allergen_question",
+    "allergen": "fish",
+    "texts": {
+      "ja": "この料理に「魚・魚介だし等」（魚類全般・かつお節や煮干し等の魚介だし・魚醤・アンチョビ・すり身・魚油等を含む）は入っていますか？",
+      "en": "Does this dish contain fish or fish broth (including any fish species, bonito/fish stock [dashi], fish sauce, anchovies, fish cake [surimi], or fish oil)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "official_term_check", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_BROTH_SEASONING",
+    "purpose": "broth_seasoning_question",
+    "allergen": null,
+    "texts": {
+      "ja": "だし・スープ・ソース・たれ・ドレッシング・隠し味などの調味料に、該当する食材が含まれていますか？",
+      "en": "Are any of these allergens present in the broth (dashi), soup stock, sauces, marinades, dressings, or hidden seasonings?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_CROSS_CONTACT",
+    "purpose": "cross_contact_question",
+    "allergen": null,
+    "texts": {
+      "ja": "鍋・フライパン・鉄板・まな板・包丁・トング・茹で湯などの調理器具を、該当する食材と共有していますか（交差接触）？",
+      "en": "Are pots, pans, grills, cutting boards, knives, tongs, or boiling water shared with foods containing these allergens (cross-contact)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "Q_FRYING_OIL",
+    "purpose": "frying_oil_question",
+    "allergen": null,
+    "texts": {
+      "ja": "同じ揚げ油やフライヤーで、該当する食材を含む料理を揚げていますか（交差接触）？",
+      "en": "Is the same frying oil or deep fryer used to cook foods containing these allergens (cross-contact)?"
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "ANS_CONTAINS",
+    "purpose": "staff_answer_option",
+    "allergen": null,
+    "texts": {
+      "ja": "入っています（原材料・だし・調味料に含まれます）",
+      "en": "Yes, it contains it (in ingredients, broth, or seasonings)."
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "ANS_DOES_NOT_CONTAIN",
+    "purpose": "staff_answer_option",
+    "allergen": null,
+    "texts": {
+      "ja": "入っていません（原材料・だし・調味料に不使用で、調理器具・揚げ油の共有もありません）",
+      "en": "No, it does not contain it (not in ingredients, broth, or seasonings, and no shared utensils or frying oil)."
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "ANS_CROSS_CONTACT_RISK",
+    "purpose": "staff_answer_option",
+    "allergen": null,
+    "texts": {
+      "ja": "調理場・油で混ざる可能性があります（原材料には不使用ですが、調理器具・茹で湯・揚げ油等を共有）",
+      "en": "Possible cross-contact in the kitchen or frying oil (not an ingredient, but shared utensils, boiling water, or fryer)."
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  },
+  {
+    "id": "ANS_UNSURE_OR_CHECKING",
+    "purpose": "staff_answer_option",
+    "allergen": null,
+    "texts": {
+      "ja": "わかりません／確認します（厨房・責任者に確認します）",
+      "en": "I am not sure / Let me check (I will check with the kitchen or manager)."
+    },
+    "verification": {
+      "ja": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      },
+      "en": {
+        "level": "team_reviewed",
+        "methods": ["back_translation", "bilingual_member_review"],
+        "reviewedAt": "2026-11-08",
+        "reviewerRole": "team member B",
+        "evidence": "docs/VALIDATION.md#phrase-checks",
+        "machineTranslationUsedForDraft": false
+      }
+    }
+  }
+]
